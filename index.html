@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAS 3 | Final Group Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#14213d",
+            accent: "#2563eb"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-navy text-white">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8">
+      <div class="mb-5 flex flex-wrap items-center gap-2">
+        <span class="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-200">
+          BSA / BSAIS
+        </span>
+        <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold">
+          FINAL GROUP PROJECT
+        </span>
+      </div>
+
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-blue-300">
+        MAS 3 — IT Application Tools in Business
+      </p>
+
+      <h1 class="mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">
+        Business Spreadsheet Management System
+      </h1>
+
+      <p class="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
+        Using Microsoft Excel to organize business records, automate
+        calculations, analyze data, and support business decision-making.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#requirements"
+           class="rounded-lg bg-blue-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-600">
+          View Requirements
+        </a>
+        <a href="#submission"
+           class="rounded-lg border border-white/30 px-5 py-3 text-sm font-semibold transition hover:bg-white/10">
+          Submission Guidelines
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Overview -->
+  <main class="mx-auto max-w-7xl space-y-12 px-5 py-10 sm:px-8">
+
+    <section>
+      <div class="grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p class="text-sm text-slate-500">Number of Groups</p>
+          <p class="mt-2 text-3xl font-bold text-navy">7</p>
+          <p class="mt-1 text-sm text-slate-500">One assigned topic per group</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p class="text-sm text-slate-500">Required Records</p>
+          <p class="mt-2 text-3xl font-bold text-navy">30+</p>
+          <p class="mt-1 text-sm text-slate-500">Sample records per workbook</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p class="text-sm text-slate-500">Total Project Score</p>
+          <p class="mt-2 text-3xl font-bold text-navy">100</p>
+          <p class="mt-1 text-sm text-slate-500">Points</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section>
+      <div class="mb-5">
+        <p class="text-sm font-bold uppercase tracking-wider text-blue-600">
+          Project Overview
+        </p>
+        <h2 class="mt-2 text-2xl font-bold text-navy">I. Project Description</h2>
+      </div>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 leading-7 shadow-sm">
+        <p>
+          Each group will design and develop a Microsoft Excel workbook for
+          a specific business operation or record management process. The
+          workbook must demonstrate how Excel can organize business data,
+          perform calculations, analyze records, and present meaningful
+          information for decision-making.
+        </p>
+        <p class="mt-4">
+          The project must apply the concepts discussed in class, including
+          spreadsheet operations, formulas, arithmetic operators, comparison
+          and logical operators, text concatenation, cell references,
+          functions, sorting, filtering, and spreadsheet formatting.
+        </p>
+        <p class="mt-4 font-semibold text-navy">
+          The output must be functional, accurate, organized, and relevant
+          to the assigned business scenario.
+        </p>
+      </div>
+    </section>
+
+    <!-- Assigned Topics -->
+    <section id="topics">
+      <div class="mb-6">
+        <p class="text-sm font-bold uppercase tracking-wider text-blue-600">
+          Group Assignments
+        </p>
+        <h2 class="mt-2 text-2xl font-bold text-navy">II. Assigned Business Topics</h2>
+        <p class="mt-2 text-slate-600">
+          Each group must work on its assigned business topic. Do not simply
+          copy another group's workbook and change the title.
+        </p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 1</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Sales and Revenue Management</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Record daily sales, products sold, quantities, prices, discounts,
+            and total revenue.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 2</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Inventory and Stock Management</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Monitor product codes, product names, stock quantities, costs,
+            selling prices, and inventory status.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 3</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Payroll Management</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Record employee information, daily rates, days worked, allowances,
+            deductions, and net salary.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 4</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Budget and Expense Management</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Monitor budgets, income, expenses, remaining balances, and
+            budget status.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 5</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Customer Orders and Accounts</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Manage customer records, order details, order totals, payments,
+            and outstanding balances.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 6</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Student Grades and Academic Records</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Record student information, assessment scores, computed grades,
+            and academic performance classifications.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm md:col-span-2 lg:col-span-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Group 7</span>
+          <h3 class="mt-2 text-lg font-bold text-navy">Accounts Receivable and Payment Monitoring</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Monitor customers, invoices, amounts due, payments received,
+            outstanding balances, and payment status.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Workbook Requirements -->
+    <section id="requirements">
+      <div class="mb-6">
+        <p class="text-sm font-bold uppercase tracking-wider text-blue-600">
+          Technical Requirements
+        </p>
+        <h2 class="mt-2 text-2xl font-bold text-navy">III. General Project Requirements</h2>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-2">
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy">A. Required Worksheets</h3>
+
+          <div class="mt-5 space-y-4">
+            <div class="flex gap-3">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-sm font-bold text-blue-700">1</span>
+              <div>
+                <p class="font-semibold">Dashboard / Summary</p>
+                <p class="text-sm leading-6 text-slate-600">Displays important totals, averages, counts, and business indicators.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-sm font-bold text-blue-700">2</span>
+              <div>
+                <p class="font-semibold">Main Records</p>
+                <p class="text-sm leading-6 text-slate-600">Contains the primary dataset for the assigned business.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-sm font-bold text-blue-700">3</span>
+              <div>
+                <p class="font-semibold">Calculations</p>
+                <p class="text-sm leading-6 text-slate-600">Demonstrates formulas and functions used to process records.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-sm font-bold text-blue-700">4</span>
+              <div>
+                <p class="font-semibold">Filtered Records</p>
+                <p class="text-sm leading-6 text-slate-600">Demonstrates sorting, filtering, or displaying records based on conditions.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-5 rounded-lg bg-slate-50 p-3 text-sm text-slate-600">
+            Additional worksheets may be included when necessary.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-bold text-navy">B. Data Requirements</h3>
+
+          <ul class="mt-5 space-y-3 text-sm leading-6 text-slate-700">
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Include at least 30 sample records.</li>
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Use appropriate column headings and consistent data formats.</li>
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Use realistic and internally consistent sample data.</li>
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Avoid unnecessary blank rows and columns in the dataset.</li>
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Ensure all formulas produce correct results.</li>
+            <li class="flex gap-2"><span class="font-bold text-blue-600">✓</span> Use fictional business information. Do not include confidential personal or financial data.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Excel Topics -->
+    <section>
+      <h2 class="text-2xl font-bold text-navy">C. Required Excel Topics</h2>
+      <p class="mt-2 text-slate-600">
+        Your workbook must apply the following concepts discussed in class.
+      </p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">1. Basic Operations</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Enter, edit, copy, and move data; insert rows or columns; adjust
+            widths and heights; organize worksheet tabs.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">2. Arithmetic Operators</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">+</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">−</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">*</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">/</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">%</span>
+          </div>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Apply addition, subtraction, multiplication, division, and
+            percentage calculations.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">3. Comparison Operators</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">=</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">&lt;&gt;</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">&gt;</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">&lt;</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">&gt;=</span>
+            <span class="rounded bg-slate-100 px-2 py-1 text-sm">&lt;=</span>
+          </div>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Compare values, produce TRUE or FALSE results, or establish
+            conditions in formulas.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">4. Text Concatenation (&amp;)</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Combine text values, such as first and last names, customer
+            details, or product codes and names.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5 sm:col-span-2">
+          <h3 class="font-bold text-navy">5. Required Excel Functions</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">SUM()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">AVERAGE()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">MAX()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">MIN()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">COUNT()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">COUNTIF()</code>
+            <code class="rounded bg-blue-50 px-2 py-1 text-sm text-blue-800">IF()</code>
+          </div>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Use SUM for totals, AVERAGE for averages, MAX and MIN for
+            extreme values, COUNT for numeric entries, COUNTIF for
+            conditional counts, and IF for conditional results.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">6. Cell References</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Use cell references in formulas, copy formulas across rows,
+            and observe how results change when inputs change.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">7. Sorting and Filtering</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Sort records and filter data using relevant conditions.
+            Use FILTER() where supported by your Excel version.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-5">
+          <h3 class="font-bold text-navy">8. Formatting and Presentation</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Apply appropriate number formats, borders, headings,
+            alignment, and consistent formatting.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Topic Calculations -->
+    <section>
+      <h2 class="text-2xl font-bold text-navy">IV. Topic-Specific Calculations</h2>
+      <p class="mt-2 text-slate-600">
+        Implement calculations that are relevant to your assigned business.
+      </p>
+
+      <div class="mt-5 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[600px] text-left text-sm">
+            <thead class="bg-navy text-white">
+              <tr>
+                <th class="px-5 py-4 font-semibold">Group / Topic</th>
+                <th class="px-5 py-4 font-semibold">Suggested Calculations</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-5 py-4 font-semibold">1. Sales</td>
+                <td class="px-5 py-4 leading-6">Total sales, average transaction value, highest and lowest sales, discount, and sales classification.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">2. Inventory</td>
+                <td class="px-5 py-4 leading-6">Total inventory value, remaining stock, highest and lowest stock quantities, and stock-level classification.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">3. Payroll</td>
+                <td class="px-5 py-4 leading-6">Gross salary, total deductions, net salary, average salary, and salary classification.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">4. Budget</td>
+                <td class="px-5 py-4 leading-6">Total budget, total expenses, remaining balance, expense percentage, and budget status.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">5. Customer Orders</td>
+                <td class="px-5 py-4 leading-6">Order subtotal, discount, final order total, payment balance, and order status.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">6. Student Grades</td>
+                <td class="px-5 py-4 leading-6">Average score, highest and lowest scores, number of students, passing count, and grade classification.</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">7. Accounts Receivable</td>
+                <td class="px-5 py-4 leading-6">Total invoices, total payments, outstanding balances, overdue account count, and payment status.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission -->
+    <section id="submission">
+      <div class="mb-6">
+        <p class="text-sm font-bold uppercase tracking-wider text-blue-600">
+          Final Deliverables
+        </p>
+        <h2 class="mt-2 text-2xl font-bold text-navy">V. Submission Requirements</h2>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-xl">📊</div>
+          <h3 class="mt-4 text-lg font-bold text-navy">1. Excel Workbook (.xlsx)</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Submit the completed, functional workbook containing business
+            records, formulas, functions, calculations, and required Excel
+            features.
+          </p>
+          <div class="mt-4 rounded-lg bg-slate-50 p-3">
+            <p class="text-xs font-semibold uppercase text-slate-500">Filename format</p>
+            <code class="mt-1 block break-all text-sm text-blue-700">MAS3_Group1_SalesManagement.xlsx</code>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-xl">📄</div>
+          <h3 class="mt-4 text-lg font-bold text-navy">2. Printed Documentation</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Submit a hard copy explaining every major part of the workbook,
+            including worksheets, data fields, formulas, functions, and
+            results.
+          </p>
+          <div class="mt-4 rounded-lg bg-slate-50 p-3">
+            <p class="text-xs font-semibold uppercase text-slate-500">Filename format</p>
+            <code class="mt-1 block break-all text-sm text-blue-700">MAS3_Group1_SalesManagement_Documentation.pdf</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 rounded-xl border border-blue-200 bg-blue-50 p-6">
+        <h3 class="font-bold text-blue-950">Documentation must include:</h3>
+        <ul class="mt-3 grid gap-2 text-sm leading-6 text-blue-950 sm:grid-cols-2">
+          <li>• Project overview and business purpose</li>
+          <li>• Explanation of every worksheet</li>
+          <li>• Explanation of the dataset and column headings</li>
+          <li>• Actual formulas and their purposes</li>
+          <li>• Explanation of functions and operators</li>
+          <li>• Cell references, sorting, and filtering</li>
+          <li>• Dashboard or summary interpretation</li>
+          <li>• Screenshots with captions and explanations</li>
+          <li>• Practical business application of the workbook</li>
+        </ul>
+        <p class="mt-4 border-t border-blue-200 pt-4 text-sm font-semibold text-blue-950">
+          Print the documentation on A4-size paper. Screenshots must be
+          clear, readable, and consistent with the actual Excel file.
+        </p>
+      </div>
+
+      <div class="mt-5 rounded-xl border border-slate-200 bg-white p-5">
+        <h3 class="font-bold text-navy">Submission Checklist</h3>
+        <p class="mt-1 text-sm text-slate-500">Use this checklist to review the requirements before submission.</p>
+
+        <div class="mt-4 space-y-3">
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">The Excel workbook is complete and saved as .xlsx.</span>
+          </label>
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">The workbook contains at least 30 sample records.</span>
+          </label>
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">All required formulas and functions have been tested.</span>
+          </label>
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">The printed documentation explains every major part of the workbook.</span>
+          </label>
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">Screenshots have captions and explanations.</span>
+          </label>
+          <label class="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" class="mt-1 h-4 w-4 accent-blue-600">
+            <span class="text-sm">The group checked the files and documentation for accuracy.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rubric -->
+    <section id="rubric">
+      <div class="mb-6">
+        <p class="text-sm font-bold uppercase tracking-wider text-blue-600">
+          Assessment
+        </p>
+        <h2 class="mt-2 text-2xl font-bold text-navy">VI. Grading Rubric</h2>
+        <p class="mt-2 text-slate-600">
+          The project will be graded based on the following criteria.
+        </p>
+      </div>
+
+      <div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[600px] text-left text-sm">
+            <thead class="bg-navy text-white">
+              <tr>
+                <th class="px-5 py-4">Criteria</th>
+                <th class="px-5 py-4">Description</th>
+                <th class="px-5 py-4 text-right">Points</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="px-5 py-4 font-semibold">Data Organization and Completeness</td>
+                <td class="px-5 py-4 text-slate-600">Complete, relevant, and properly structured records.</td>
+                <td class="px-5 py-4 text-right font-semibold">15</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Formula and Function Application</td>
+                <td class="px-5 py-4 text-slate-600">Correct use of arithmetic operators, cell references, and required functions.</td>
+                <td class="px-5 py-4 text-right font-semibold">25</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Logical, Comparison, and Concatenation Operators</td>
+                <td class="px-5 py-4 text-slate-600">Correct implementation of conditions, comparisons, and text concatenation.</td>
+                <td class="px-5 py-4 text-right font-semibold">15</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Sorting, Filtering, and Data Management</td>
+                <td class="px-5 py-4 text-slate-600">Effective organization, sorting, and filtering of records.</td>
+                <td class="px-5 py-4 text-right font-semibold">10</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Formatting and Professional Presentation</td>
+                <td class="px-5 py-4 text-slate-600">Readable layout, appropriate formats, and consistent design.</td>
+                <td class="px-5 py-4 text-right font-semibold">10</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Business Relevance and Accuracy</td>
+                <td class="px-5 py-4 text-slate-600">Useful calculations, accurate results, and relevance to the assigned business.</td>
+                <td class="px-5 py-4 text-right font-semibold">10</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4 font-semibold">Documentation and Explanation</td>
+                <td class="px-5 py-4 text-slate-600">Complete explanations of worksheets, data, formulas, functions, screenshots, and business applications.</td>
+                <td class="px-5 py-4 text-right font-semibold">15</td>
+              </tr>
+            </tbody>
+            <tfoot class="bg-blue-50">
+              <tr>
+                <td colspan="2" class="px-5 py-4 font-bold text-navy">TOTAL</td>
+                <td class="px-5 py-4 text-right text-lg font-bold text-blue-700">100</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Integrity -->
+    <section id="reminders">
+      <div class="rounded-xl border border-amber-300 bg-amber-50 p-6 sm:p-8">
+        <div class="flex items-start gap-4">
+          <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-xl">
+            ⚠️
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-amber-950">VII. Important Reminders</h2>
+
+            <ul class="mt-4 space-y-3 text-sm leading-6 text-amber-950">
+              <li>• All formulas must be functional. Do not manually type expected answers where formulas are required.</li>
+              <li>• Check all calculations before submitting the workbook.</li>
+              <li>• Each group must create its own workbook based on its assigned topic.</li>
+              <li>• All group members must understand the formulas and functions used.</li>
+              <li>• <strong>Academic Integrity:</strong> Obvious AI-generated work submitted without proper understanding or verification, as well as copying from other groups or online sources, will result in deduction of points. All group members must understand and be able to explain their submitted workbook and documentation.</li>
+              <li>• Late submissions will be subject to the instructor's announced submission policy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 py-8 text-center">
+      <p class="text-sm font-semibold text-navy">
+        MAS 3 — IT Application Tools in Business
+      </p>
+      <p class="mt-2 text-sm text-slate-500">
+        Final Group Project · BSAIS / BSA
+      </p>
+      <p class="mt-4 text-xs text-slate-400">
+        Develop practical spreadsheet skills for business and accounting.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
